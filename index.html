@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz App</title>
+</head>
+<body onload="loadInitialData()">
+    <div class="quiz-container">
+        <h1>Quiz App</h1>
+        <p id="question"></p>
+        <ul id="answer-list">
+            <!-- Answer options will be injected here -->
+            
+        </ul>
+        <div id="button-container">
+        <button id="submit">Submit</button>
+        <button id="next">Next</button>
+    </div>
+    </div>
+    <script src="./js/script.js"></script>
+    <style>
+        body{
+            background-color: palegoldenrod;
+            padding: 50px;
+
+        }
+        ul{
+            list-style-type:none;
+            width:200px;
+        }
+        #next {
+            display: none;
+        }
+        #question{
+            text-align:center;
+        }
+        .quiz-container{
+           
+            background-color: white;
+            max-width: 350px;
+            height: auto;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: auto;
+            padding: 20px;
+
+                }
+
+        #button-container{
+            display: flex;
+            justify-content: center;
+            margin-right: 120px;
+            margin-top: 20px;
+        }
+        #answer-list{
+            margin: auto;
+        }
+        li{
+            text-align: left;
+            margin-bottom: 10px;
+        }
+        input[type='radio']{
+            margin-right: 10px;
+        }
+          /* Style for list items */
+          #answer-list li {
+
+            cursor: pointer; /* Change cursor to pointer */
+            transition: background-color 0.3s; /* Smooth transition for background color */
+        }
+
+        /* Change background color on hover */
+        #answer-list li:hover {
+            background-color: rgb(245, 245, 245); /* Change background color on hover */
+        }
+
+    </style>
+</body>
+</html>
